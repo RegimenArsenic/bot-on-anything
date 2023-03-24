@@ -6,7 +6,6 @@ from common import log
 import os
 from multiprocessing import Pool
 
-
 def startProcess(channel_type):
     # load config
     config.load_config()
@@ -14,7 +13,6 @@ def startProcess(channel_type):
     channel = channel_factory.create_channel(channel_type)
     # startup channel
     channel.startup()
-
 
 def wrapper(channel_type):
     startProcess(channel_type)
